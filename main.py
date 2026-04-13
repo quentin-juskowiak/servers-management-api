@@ -60,6 +60,23 @@ def add_server(server: Server):
     return {"message": "Server added", "server": new_server}
 
 
+@app.put("/servers/{server_id}")
+def update_server(server_id: int, updated_server: Server):
+    for server in servers:
+        if server["id"] == server_id:
+            server["name"] = updated_server.name
+            server["ip"] = updated_server.ip
+
+            save_servers(servers)
+
+            return {
+                "message": "Server updated",
+                "server": server
+            }
+
+    raise HTTPException(status_code=404, detail="Server not found")
+
+
 @app.delete("/servers/{server_id}")
 def delete_server(server_id: int):
     for i, s in enumerate(servers):

@@ -1,12 +1,7 @@
 [
     {
         "id": 1,
-        "name": "test json",
+        "name": "example server",
         "ip": "192.168.10.9"
-    },
-    {
-        "id": 2,
-        "name": "second test json",
-        "ip": "192.168.10.15"
-    }
+    }    
 ]

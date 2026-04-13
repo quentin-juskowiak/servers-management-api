@@ -84,6 +84,7 @@ uvicorn main:app --reload
 - GET / → API status
 - GET /servers → List all servers
 - POST /servers → Add a server
+- PUT /servers/{server_id} → Update a server
 - DELETE /servers/{server_id} → Delete a server
 
 ---

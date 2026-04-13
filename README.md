@@ -61,8 +61,8 @@ uvicorn main:app --reload
 
 ## 🌐 API Access
 
-- Swagger UI: http://127.0.0.1:8000/docs  
-- ReDoc: http://127.0.0.1:8000/redoc  
+- Swagger UI: http://127.0.0.1:8000/docs
+- ReDoc: http://127.0.0.1:8000/redoc
 
 ---
 
@@ -81,10 +81,10 @@ uvicorn main:app --reload
 
 ## 🔁 Available Endpoints
 
-- GET / → API status  
-- GET /servers → List all servers  
-- POST /servers → Add a server  
-- DELETE /servers/{server_id} → Delete a server  
+- GET / → API status
+- GET /servers → List all servers
+- POST /servers → Add a server
+- DELETE /servers/{server_id} → Delete a server
 
 ---
 
@@ -119,7 +119,6 @@ servers-management-api/
 
 - Add database (SQLite)
 - Add authentication (JWT)
-- Add update endpoint (PUT / PATCH)
 - Dockerize the application
 
 ---
